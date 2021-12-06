@@ -31,6 +31,7 @@ public class UserController {
     @GetMapping("/getByEmail")
     User getByEmail(@RequestParam("email") String email) throws NotFoundException {
         return userService.getByEmail(email);
+
     }
 
     @GetMapping("/login")
