@@ -26,6 +26,7 @@ public class UserController {
     @GetMapping("/{id}")
     User getById(@PathVariable int id) throws NotFoundException {
         return userService.getByID(id);
+
     }
 
     @GetMapping("/getByEmail")
